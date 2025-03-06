@@ -23,7 +23,7 @@ To run the project locally, follow these steps:
 
 1. Clone the repository:
    ```bash
-   git clone 
+   git clone https://github.com/Robin-Roy11/task4.git
 
    you can simply open the index.html file directly in your browser.
 
