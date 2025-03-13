@@ -100,31 +100,33 @@
             </form>
         </div>
 
+                <!-- Filter Buttons for income,expense and all transactions -->
+                <div class="glass-effect p-8 rounded-2xl shadow-2xl border border-gray-700/50 hover:border-cyan-500/50 transition-all-smooth group">
+                    <h2 class="text-2xl font-semibold mb-6">Filter Transactions</h2>
+                    <div class="flex space-x-4">
+                        <button id="allBtn" class="w-full bg-gradient-to-r from-sky-400 to-blue-500 text-gray-900 py-3 px-6 rounded-lg hover:from-sky-500 hover:to-blue-700 hover:text-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:ring-offset-gray-900 transition-all transform hover:scale-105 active:scale-95">
+        
+                            All Transactions
+                        </button>
+                        <button id="incomeBtn" class="w-full bg-gradient-to-r from-teal-400 to-emerald-500 text-gray-900 py-3 px-6 rounded-lg hover:from-teal-500 hover:to-emerald-700 hover:text-gray-100 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2 focus:ring-offset-gray-900 transition-all transform hover:scale-105 active:scale-95">
+        
+                            Income Transactions
+                            </button>
+                         <button id="expenseBtn" class="w-full bg-gradient-to-r from-rose-400 to-pink-500 text-gray-900 py-3 px-6 rounded-lg hover:from-rose-500 hover:to-pink-700 hover:text-gray-100 focus:outline-none focus:ring-2 focus:ring-pink-500 focus:ring-offset-2 focus:ring-offset-gray-900 transition-all transform hover:scale-105 active:scale-95">
+        
+                            Expense Transactions
+                        </button>
+                        </div>
+                        </div>
+        
+
         <!-- Transactions List -->
         <div class="glass-effect p-8 rounded-2xl shadow-2xl border border-gray-700/50 hover:border-cyan-500/50 transition-all-smooth group">
-            <h2 class="text-2xl font-semibold mb-6">Recent Transactions</h2>
+            <h2 class="text-2xl font-semibold mb-6">Transactions</h2>
             <div id="transactionList" class="space-y-4"></div>
         </div>
 
         
-        <!-- Filter Buttons for income,expense and all transactions -->
-        <div class="glass-effect p-8 rounded-2xl shadow-2xl border border-gray-700/50 hover:border-cyan-500/50 transition-all-smooth group">
-            <h2 class="text-2xl font-semibold mb-6">Filter Transactions</h2>
-            <div class="flex space-x-4">
-                <button id="allBtn" class="w-full bg-gradient-to-r from-sky-400 to-blue-500 text-gray-900 py-3 px-6 rounded-lg hover:from-sky-500 hover:to-blue-700 hover:text-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:ring-offset-gray-900 transition-all transform hover:scale-105 active:scale-95">
-
-                    All Transactions
-                </button>
-                <button id="incomeBtn" class="w-full bg-gradient-to-r from-teal-400 to-emerald-500 text-gray-900 py-3 px-6 rounded-lg hover:from-teal-500 hover:to-emerald-700 hover:text-gray-100 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2 focus:ring-offset-gray-900 transition-all transform hover:scale-105 active:scale-95">
-
-                    Income Transactions
-                    </button>
-                 <button id="expenseBtn" class="w-full bg-gradient-to-r from-rose-400 to-pink-500 text-gray-900 py-3 px-6 rounded-lg hover:from-rose-500 hover:to-pink-700 hover:text-gray-100 focus:outline-none focus:ring-2 focus:ring-pink-500 focus:ring-offset-2 focus:ring-offset-gray-900 transition-all transform hover:scale-105 active:scale-95">
-
-                    Expense Transactions
-                </button>
-                </div>
-                </div>
 
         <!-- Reset Button -->
         <div class="glass-effect p-8 rounded-2xl shadow-2xl border border-gray-700/50 hover:border-cyan-500/50 transition-all-smooth group">
@@ -255,15 +257,6 @@
                 }, { income: 0, expense: 0, balance: 0 });
             }
 
-            //update filter buttons ui
-
-            updateFilterButtons() {
-                this.allBtn.classList.remove('bg-gray-700', 'text-white');
-                this.incomeBtn.classList.remove('bg-gray-700', 'text-white');
-                this.expenseBtn.classList.remove('bg-gray-700', 'text-white');
-
-                updateFilterButtons();
-            }
 
             updateUI() {
                 const totals = this.calculateTotals();
