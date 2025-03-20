@@ -167,9 +167,9 @@
                 this.editIndex = document.getElementById('editIndex');
                 this.submitBtn = document.getElementById('submitBtn');
                 this.transactionList = document.getElementById('transactionList');
-                this.allBtn = document.getElementById('allBtn');
-                this.incomeBtn = document.getElementById('incomeBtn');
-                this.expenseBtn = document.getElementById('expenseBtn');
+                this.allBtn = document.getElementById('transactionList');
+                this.incomeBtn = document.getElementById('transactionList');
+                this.expenseBtn = document.getElementById('transactionList');
 
                 this.initializeEventListeners();
                 this.updateUI();
@@ -240,6 +240,9 @@
                 this.submitBtn.textContent = 'Update Transaction';
                 this.submitBtn.classList.remove('from-cyan-500', 'to-teal-500');
                 this.submitBtn.classList.add('from-red-400', 'to-red-600');
+                this.incomeBtn.classList.remove('bg-teal-500', 'hover:bg-teal-600');
+                this.expenseBtn.classList.remove('bg-red-500', 'hover:bg-red-600');
+                
 
                 this.form.scrollIntoView({ behavior: 'smooth' });
             }
