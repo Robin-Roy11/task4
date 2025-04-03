@@ -102,22 +102,23 @@
 
                 <!-- Filter Buttons for income,expense and all transactions -->
                 <div class="glass-effect p-8 rounded-2xl shadow-2xl border border-gray-700/50 hover:border-cyan-500/50 transition-all-smooth group">
-                    <h2 class="text-2xl font-semibold mb-6">Filter Transactions</h2>
-                    <div class="flex space-x-4">
-                        <button id="allBtn" class="w-full bg-gradient-to-r from-sky-400 to-blue-500 text-gray-900 py-3 px-6 rounded-lg hover:from-sky-500 hover:to-blue-700 hover:text-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:ring-offset-gray-900 transition-all transform hover:scale-105 active:scale-95">
-        
-                            All Transactions
-                        </button>
-                        <button id="incomeBtn" class="w-full bg-gradient-to-r from-teal-400 to-emerald-500 text-gray-900 py-3 px-6 rounded-lg hover:from-teal-500 hover:to-emerald-700 hover:text-gray-100 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2 focus:ring-offset-gray-900 transition-all transform hover:scale-105 active:scale-95">
-        
-                            Income Transactions
-                            </button>
-                         <button id="expenseBtn" class="w-full bg-gradient-to-r from-rose-400 to-pink-500 text-gray-900 py-3 px-6 rounded-lg hover:from-rose-500 hover:to-pink-700 hover:text-gray-100 focus:outline-none focus:ring-2 focus:ring-pink-500 focus:ring-offset-2 focus:ring-offset-gray-900 transition-all transform hover:scale-105 active:scale-95">
-        
-                            Expense Transactions
-                        </button>
+                    <h2 class="text-2xl font-semibold mb-6">Filter Transaction</h2>
+                    <div class="flex space-y-2 md:space-y-0 md:space-x-4 flex-col md:flex-row">
+                        <button id="allBtn" 
+                        class="w-full bg-gradient-to-r from-sky-400 to-blue-500 text-gray-900 py-3 px-6 rounded-lg hover:from-sky-500 hover:to-blue-600 hover:text-gray-100 focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:ring-offset-2 focus:ring-offset-gray-900 transition-all transform hover:scale-105 active:scale-95">
+                    All Transaction
+                </button>
+                <button id="incomeBtn" 
+                class="w-full bg-gradient-to-r from-teal-400 to-emerald-500 text-gray-900 py-3 px-6 rounded-lg hover:from-teal-500 hover:to-emerald-600 hover:text-gray-100 focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:ring-offset-2 focus:ring-offset-gray-900 transition-all transform hover:scale-105 active:scale-95">
+            income Transaction
+        </button>
+        <button id="expenseBtn" 
+        class="w-full bg-gradient-to-r from-rose-400 to-pink-500 text-gray-900 py-3 px-6 rounded-lg hover:from-rose-500 hover:to-pink-600 hover:text-gray-100 focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:ring-offset-2 focus:ring-offset-gray-900 transition-all transform hover:scale-105 active:scale-95">
+    expense Transaction
+</button>
                         </div>
                         </div>
+                        
         
 
         <!-- Transactions List -->
